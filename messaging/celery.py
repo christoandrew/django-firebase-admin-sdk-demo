@@ -3,6 +3,6 @@ import os
 from celery import Celery
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-firebase-admin-sdk.settings')
-app = Celery('notify')
+app = Celery('messaging')
 app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks()
