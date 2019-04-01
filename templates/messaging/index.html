@@ -1,7 +1,32 @@
 {% extends 'layout.html' %}
+{% load static %}
 {% block content %}
+    <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+        <main class="mdl-layout__content">
+            <div class="mdl-tabs mdl-js-tabs">
+                <div class="mdl-tabs__tab-bar">
+                    <a href="#tab1-panel" class="mdl-tabs__tab is-active">Send message to list of devices</a>
+                    <a href="#tab2-panel" class="mdl-tabs__tab">Send message to topic</a>
+                </div>
 
+                <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="sample1">
+                            <label class="mdl-textfield__label" for="sample1">Text...</label>
+                        </div>
+                    </form>
+                </div>
 
-
-
+                <div class="mdl-tabs__panel" id="tab2-panel">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="sample1">
+                            <label class="mdl-textfield__label" for="sample1">Text...</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
 {% endblock %}

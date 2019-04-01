@@ -13,8 +13,11 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    print request.GET.items
-    return render(request, 'index.html')
+    return render(request, 'messaging/index.html')
+
+
+def register_device(request):
+    pass
 
 
 def send_to_topic(request):

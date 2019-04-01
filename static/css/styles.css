@@ -28,6 +28,11 @@ html, body {
 .mdl-layout__drawer .avatar {
   margin-bottom: 16px;
 }
+
+.mdl-layout__content{
+    margin-left: 240px;
+    width: calc(100% - 240px);
+}
 .demo-drawer {
   border: none;
 }

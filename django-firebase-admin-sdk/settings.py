@@ -172,4 +172,8 @@ CELERY_RESULT_BACKEND = "redis://localhost"
 
 STATIC_URL = '/static/'
 
-CERTIFICATE_PATH = os.path.join(BASE_DIR, "messaging/static/raw/djangonotify.json")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+CERTIFICATE_PATH = os.path.join(BASE_DIR, "messaging/../static/raw/djangonotify.json")
